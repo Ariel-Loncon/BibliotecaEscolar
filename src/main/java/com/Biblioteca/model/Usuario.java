@@ -8,6 +8,9 @@ public class Usuario {
     private String contraseña;
     private String rol;
 
+    public Usuario() {
+    }
+
     public Usuario(int id, String nombre, String rut, String correo, String contraseña, String rol) {
         this.id = id;
         this.nombre = nombre;
@@ -64,4 +67,5 @@ public class Usuario {
     public void setRol(String rol) {
         this.rol = rol;
     }
+
 }
