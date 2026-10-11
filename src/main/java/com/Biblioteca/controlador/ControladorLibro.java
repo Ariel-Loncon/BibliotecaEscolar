@@ -4,6 +4,12 @@ import com.Biblioteca.dao.LibroDAO;
 import com.Biblioteca.model.Libro;
 import java.util.List;
 
+
+/**
+ * Clase encargada de gestionar los libros,
+ * siendo el intermediario entre la lógica y la interfaz Swing
+ */
+
 public class ControladorLibro {
     private LibroDAO dao = new LibroDAO();
 

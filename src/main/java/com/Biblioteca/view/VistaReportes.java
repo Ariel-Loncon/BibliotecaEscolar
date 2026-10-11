@@ -4,6 +4,10 @@ import com.Biblioteca.controlador.ControladorReporte;
 import javax.swing.*;
 import java.util.List;
 
+/**
+ * Interfaz de los reportes, permite ver informes de datos según el movimiento de libros
+ */
+
 public class VistaReportes extends JFrame {
     private JTextArea txtAreaReporte;
     private ControladorReporte controller = new ControladorReporte();

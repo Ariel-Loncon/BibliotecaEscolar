@@ -4,6 +4,10 @@ import com.Biblioteca.dao.LibroDAO;
 import javax.swing.*;
 import java.sql.Date;
 
+/**
+ * Clase que gestiona los préstamos mediante Runnable
+ */
+
 public class PrestamoSincro implements Runnable {
     private int idEstudiante;
     private int idLibro;

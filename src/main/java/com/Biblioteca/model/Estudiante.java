@@ -1,15 +1,28 @@
 package com.Biblioteca.model;
 
+/**
+ * Clase que representa a un estudiante, habilitado para solicitar préstamos de libros
+ */
 public class Estudiante {
+    //Atributos de estudiantes
     private int id;
     private String nombre;
     private String rut;
     private String curso;
     private String correo;
-
+    //Constructor vacio
     public Estudiante() {
     }
 
+    /**
+     *
+     * @param id Número de identificación del estudiante
+     * @param nombre Nombre del estudiante
+     * @param rut Rol único tributario del estudiante
+     * @param curso Curso del Colegio al que pertenece el estudiante
+     * @param correo Correo electrónico del estudiante
+     */
+    //Constructor
     public Estudiante(int id, String nombre, String rut, String curso, String correo) {
         this.id = id;
         this.nombre = nombre;

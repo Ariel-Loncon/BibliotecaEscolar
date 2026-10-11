@@ -6,6 +6,11 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase que interactúa con la base de datos, para gestionar los datos las categoria
+ * para la clasificación de los libros
+ */
+
 public class CategoriaDAO {
 
     public List<Categoria> listarCategorias() {

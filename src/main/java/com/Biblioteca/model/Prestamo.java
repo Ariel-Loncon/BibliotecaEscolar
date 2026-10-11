@@ -1,7 +1,12 @@
 package com.Biblioteca.model;
 import java.sql.Date;
 
+/**
+ * Clase encargada de gestionar las clasificaciones de los libros y de los préstamos realizados
+ */
+
 public class Prestamo {
+    //Atributos de la clase Prestamo
     private int id;
     private int idEstudiante;
     private int idLibro;
@@ -9,9 +14,21 @@ public class Prestamo {
     private Date fechaDevolucion;
     private boolean devuelto;
 
+    //Constructor vacío
     public Prestamo() {
     }
 
+    /**
+     *
+     * @param id Número de identificación del préstamo
+     * @param idEstudiante Número de identificación del estudiante que solicito el libro
+     * @param idLibro Numero de identificación del libro prestado
+     * @param fechaPrestamo Fecha de préstamo del libro
+     * @param fechaDevolucion Fecha de devolución del libro
+     * @param devuelto Indicador de estado, de las devoluciones del libro
+     */
+
+    //Constructor de Prestamo
     public Prestamo(int id, int idEstudiante, int idLibro, Date fechaPrestamo, Date fechaDevolucion, boolean devuelto) {
         this.id = id;
         this.idEstudiante = idEstudiante;
@@ -20,7 +37,7 @@ public class Prestamo {
         this.fechaDevolucion = fechaDevolucion;
         this.devuelto = devuelto;
     }
-
+    //Getters and Setters
     public int getId() {
         return id;
     }

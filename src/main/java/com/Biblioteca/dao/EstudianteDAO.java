@@ -6,6 +6,10 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase que interactúa con la base de datos, para gestionar los datos de los estudiantes
+ */
+
 public class EstudianteDAO {
 
     public List<Estudiante> listarEstudiantes() {

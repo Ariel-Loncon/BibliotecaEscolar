@@ -1,5 +1,8 @@
 package com.Biblioteca.model;
 
+/**
+ * Clase que gestiona las categorías de libros
+ */
 public class Categoria {
     private int id;
     private String nombre;

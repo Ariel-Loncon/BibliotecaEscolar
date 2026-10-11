@@ -4,6 +4,10 @@ import com.Biblioteca.conexion.DatabaseConnection;
 import com.Biblioteca.model.Usuario;
 import java.sql.*;
 
+/**
+ * Clase que interactúa con la base de datos, para gestionar los datos de los usuarios
+ */
+
 public class UsuarioDAO {
     public Usuario validarLogin(String correo, String contraseña) {
         String sql = "SELECT * FROM usuarios WHERE correo = ? AND contraseña = ?";

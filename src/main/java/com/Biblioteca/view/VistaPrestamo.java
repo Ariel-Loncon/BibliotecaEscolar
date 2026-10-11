@@ -5,6 +5,10 @@ import javax.swing.*;
 import java.sql.Date;
 import java.time.LocalDate;
 
+/**
+ * Interfaz de préstamos, permite ingresar préstamos a los estudiantes
+ */
+
 public class VistaPrestamo extends JFrame {
     private JTextField txtIdEstudiante, txtIdLibro;
     private JButton btnPrestar;

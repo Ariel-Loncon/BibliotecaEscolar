@@ -5,6 +5,10 @@ import com.Biblioteca.model.Usuario;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
+/**
+ * Pantalla inició, primera ventana que hace el filtro según el tipo de usuario
+ */
+
 public class VistaLogin extends JFrame {
     private JTextField txtCorreo;
     private JPasswordField txtContrasena;

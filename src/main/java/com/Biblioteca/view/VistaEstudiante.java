@@ -6,6 +6,10 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.util.List;
 
+/**
+ * Interfaz de estudiantes, muestra el registro de los estudiantes registrados en la base de datos
+ */
+
 public class VistaEstudiante extends JFrame {
     private JTable tablaEstudiantes;
     private DefaultTableModel modeloTabla;

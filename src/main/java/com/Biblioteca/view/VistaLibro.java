@@ -6,6 +6,10 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.util.List;
 
+/**
+ * Interfaz de los libros, muestra los libros registrados
+ */
+
 public class VistaLibro extends JFrame {
     private JTable tablaLibros;
     private DefaultTableModel modeloTabla;

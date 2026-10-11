@@ -1,6 +1,11 @@
 package com.Biblioteca.model;
 
+/**
+ * Clase que representa al usuario previamente registrado
+ */
+
 public class Usuario {
+    //Atributos de usuario
     private int id;
     private String nombre;
     private String rut;
@@ -8,9 +13,19 @@ public class Usuario {
     private String contraseña;
     private String rol;
 
+    //Constructor vacío
     public Usuario() {
     }
-
+    /**
+     *
+     * @param id Numero identificador del usuario
+     * @param nombre Nombre de usuario
+     * @param rut Rol único tributario del usuario
+     * @param correo Correo electrónico del usuario
+     * @param contraseña Contraseña de la cuanta del usuario
+     * @param rol Quien es 'Bibliotecario o estudiante'
+     */
+    //Constructor
     public Usuario(int id, String nombre, String rut, String correo, String contraseña, String rol) {
         this.id = id;
         this.nombre = nombre;
@@ -19,7 +34,7 @@ public class Usuario {
         this.contraseña = contraseña;
         this.rol = rol;
     }
-
+    //Getters y setters
     public int getId() {
         return id;
     }

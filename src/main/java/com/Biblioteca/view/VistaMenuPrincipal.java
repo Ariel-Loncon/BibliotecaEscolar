@@ -3,6 +3,10 @@ package com.Biblioteca.view;
 import com.Biblioteca.model.Usuario;
 import javax.swing.*;
 
+/**
+ * Panel de navegación, varía según el usuario, limitando algunas funciones
+ */
+
 public class VistaMenuPrincipal extends JFrame {
     private Usuario usuarioActual;
 
