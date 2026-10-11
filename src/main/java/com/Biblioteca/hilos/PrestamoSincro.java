@@ -28,7 +28,7 @@ public class PrestamoSincro implements Runnable {
         LibroDAO dao = new LibroDAO();
         boolean exito = dao.actualizarStockYPrestar(idLibro, idEstudiante, fechaPrestamo, fechaDevolucion);
 
-        // Actualizar la interfaz gráfica de forma segura en el hilo de eventos de Swing (EDT)
+        // Actualizar la interfaz gráfica de forma segura en el hilo de eventos de Swing
         SwingUtilities.invokeLater(() -> {
             if (exito) {
                 JOptionPane.showMessageDialog(null, "¡Préstamo registrado exitosamente en segundo plano!");

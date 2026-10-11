@@ -43,7 +43,12 @@ public class VistaMenuPrincipal extends JFrame {
         btnReportes.setBounds(30, 220, 200, 35);
         add(btnReportes);
 
-        // Restricciones según el rol exigidas por la rúbrica
+        // Botón para cerrar sesión y volver al Login
+        JButton btnCerrarSesion = new JButton("Cerrar Sesión");
+        btnCerrarSesion.setBounds(30, 270, 200, 35); // Ajusta la posición según tu diseño
+        add(btnCerrarSesion);
+
+        // Restricciones según el rol
         if (usuario.getRol().equals("estudiante")) {
             // El estudiante solo tiene acceso a préstamo y consulta, no gestiona inventario total
             btnLibros.setEnabled(false);
@@ -66,6 +71,13 @@ public class VistaMenuPrincipal extends JFrame {
 
         btnReportes.addActionListener(e -> {
             new VistaReportes().setVisible(true);
+        });
+
+        btnCerrarSesion.addActionListener(e -> {
+            // 1. Mostrar la ventana de Login nuevamente
+            new VistaLogin().setVisible(true);
+            // 2. Cerrar y destruir la ventana actual del Menú Principal
+            this.dispose();
         });
     }
 }
