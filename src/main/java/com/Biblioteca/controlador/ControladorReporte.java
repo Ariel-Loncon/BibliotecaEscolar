@@ -9,12 +9,13 @@ import java.util.List;
  */
 
 public class ControladorReporte {
+    //Instancia de objeto que comunica mediante dao con la base de datos
     private PrestamoDAO dao = new PrestamoDAO();
-
+    //Solicita al DAO el lsitado de los libros mas solicitados
     public List<String> getLibrosMasPrestados() {
         return dao.obtenerLibrosMasPrestados();
     }
-
+    //Solicita mediante lista, los prestamos activos vigentes
     public List<String> getLibrosEnPrestamoActual() {
         return dao.obtenerLibrosEnPrestamo();
     }

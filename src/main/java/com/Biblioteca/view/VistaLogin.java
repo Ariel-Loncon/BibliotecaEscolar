@@ -46,7 +46,7 @@ public class VistaLogin extends JFrame {
             String correo = txtCorreo.getText();
             String pass = new String(txtContrasena.getPassword());
 
-            // Usando el Controlador en lugar del DAO (Cumple con MVC)
+            // Usando el Controlador en lugar del DAO
             Usuario u = controladorLogin.autenticar(correo, pass);
 
             if (u != null) {

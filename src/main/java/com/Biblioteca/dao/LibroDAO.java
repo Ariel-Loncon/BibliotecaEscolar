@@ -11,7 +11,7 @@ import java.util.List;
  */
 
 public class LibroDAO {
-
+    //Consulta la tabla libros en la base de datos y los organiza en una lista
     public List<Libro> listarLibros() {
         List<Libro> lista = new ArrayList<>();
         String sql = "SELECT * FROM libros";
@@ -34,7 +34,7 @@ public class LibroDAO {
         }
         return lista;
     }
-
+   //Inserta un nuevo libro en la base de datos
     public boolean insertar(Libro l) {
         String sql = "INSERT INTO libros (titulo, autor, isbn, editorial, stock, id_categoria) VALUES (?, ?, ?, ?, ?, ?)";
         try (Connection con = DatabaseConnection.getInstance().getConnection();
@@ -52,7 +52,7 @@ public class LibroDAO {
         return false;
     }
 
-    // Método sincronizado para evitar condiciones de carrera en concurrencia (requisito EFT)
+    //  Método transaccional y sincronizado para concurrencia
     public synchronized boolean actualizarStockYPrestar(int idLibro, int idEstudiante, Date fechaPrestamo, Date fechaDevolucion) {
         String sqlStock = "SELECT stock FROM libros WHERE id = ?";
         String sqlUpdateStock = "UPDATE libros SET stock = stock - 1 WHERE id = ? AND stock > 0";

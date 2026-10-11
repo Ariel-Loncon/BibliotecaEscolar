@@ -51,7 +51,7 @@ public class VistaPrestamo extends JFrame {
                 // Deshabilita el botón temporalmente para evidenciar la acción asíncrona
                 btnPrestar.setEnabled(false);
 
-                // Dispara el hilo en segundo plano (Requisito EFT)
+                // Dispara el hilo en segundo plano
                 controller.solicitarPrestamo(idEst, idLib, fPrestamo, fDevolucion, () -> {
                     btnPrestar.setEnabled(true);
                 });

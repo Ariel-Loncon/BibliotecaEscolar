@@ -11,7 +11,7 @@ import java.util.List;
  */
 
 public class EstudianteDAO {
-
+    //Se ejecuta una consulta SQL SELECT Y FROM mapeandolo en un objeto "Estudiante" dentro de una lista
     public List<Estudiante> listarEstudiantes() {
         List<Estudiante> lista = new ArrayList<>();
         String sql = "SELECT * FROM estudiantes";
@@ -32,7 +32,7 @@ public class EstudianteDAO {
         }
         return lista;
     }
-
+    //Inserta los datos de nuevos estudiantes
     public boolean insertar(Estudiante e) {
         String sql = "INSERT INTO estudiantes (nombre, rut, curso, correo) VALUES (?, ?, ?, ?)";
         try (Connection con = DatabaseConnection.getInstance().getConnection();

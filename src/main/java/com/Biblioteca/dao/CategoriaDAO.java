@@ -12,7 +12,7 @@ import java.util.List;
  */
 
 public class CategoriaDAO {
-
+    //Se conecta a la base de datos y transforma cada registro en un objeto de tipo Categoria
     public List<Categoria> listarCategorias() {
         List<Categoria> lista = new ArrayList<>();
         String sql = "SELECT * FROM categorias";

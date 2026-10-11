@@ -9,10 +9,11 @@ import java.sql.Date;
  */
 
 public class ControladorPrestamo {
-
+    //Crea una tarea concurrente
     public void solicitarPrestamo(int idEstudiante, int idLibro, Date fPrestamo, Date fDevolucion, Runnable callbackRecargar) {
         PrestamoSincro tarea = new PrestamoSincro(idEstudiante, idLibro, fPrestamo, fDevolucion, callbackRecargar);
         Thread hiloPrestamo = new Thread(tarea);
-        hiloPrestamo.start(); // Ejecución asíncrona sin congelar el JFrame
+        // Ejecución asíncrona sin congelar el JFrame
+        hiloPrestamo.start();
     }
 }

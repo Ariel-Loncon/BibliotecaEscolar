@@ -7,14 +7,14 @@ import java.sql.*;
 /**
  * Clase que interactúa con la base de datos, para gestionar los datos de los usuarios
  */
-
+//Ejecuta consulta filtrando por correo y contraseña
 public class UsuarioDAO {
     public Usuario validarLogin(String correo, String contraseña) {
         String sql = "SELECT * FROM usuarios WHERE correo = ? AND contraseña = ?";
         try (Connection con = DatabaseConnection.getInstance().getConnection();
              PreparedStatement pst = con.prepareStatement(sql)) {
-            pst.setString(1, correo);
-            pst.setString(2, contraseña);
+            pst.setString(1, correo); //Usuario en login
+            pst.setString(2, contraseña); //Contraseña en login
             try (ResultSet rs = pst.executeQuery()) {
                 if (rs.next()) {
                     return new Usuario(
