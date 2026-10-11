@@ -17,7 +17,7 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Asegurar que la interfaz gráfica corra en el hilo seguro de Swing (EDT)
+        // Asegurar que la interfaz gráfica corra en el hilo seguro de Swing
         SwingUtilities.invokeLater(() -> {
             VistaLogin login = new VistaLogin();
             login.setVisible(true);

@@ -55,7 +55,7 @@ public class VistaMenuPrincipal extends JFrame {
             btnEstudiantes.setEnabled(false);
         }
 
-        // --- ACCIONES DE LOS BOTONES (NAVEGACIÓN) ---
+        //Acciones de los botones de navegación
 
         btnLibros.addActionListener(e -> {
             new VistaLibro().setVisible(true);
@@ -66,7 +66,7 @@ public class VistaMenuPrincipal extends JFrame {
         });
 
         btnPrestamos.addActionListener(e -> {
-            new VistaPrestamo().setVisible(true);
+            new VistaPrestamo(usuarioActual).setVisible(true);
         });
 
         btnReportes.addActionListener(e -> {
