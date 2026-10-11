@@ -3,7 +3,7 @@ package com.Biblioteca.controlador;
 import com.Biblioteca.dao.UsuarioDAO;
 import com.Biblioteca.model.Usuario;
 
-public class LoginController {
+public class ControladorLogin {
     private UsuarioDAO usuarioDAO = new UsuarioDAO();
 
     public Usuario autenticar(String correo, String contraseña) {

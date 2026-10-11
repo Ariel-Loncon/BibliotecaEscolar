@@ -1,16 +1,15 @@
 package com.Biblioteca.view;
 
-import com.Biblioteca.controlador.LibroController;
+import com.Biblioteca.controlador.ControladorLibro;
 import com.Biblioteca.model.Libro;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.awt.*;
 import java.util.List;
 
 public class VistaLibro extends JFrame {
     private JTable tablaLibros;
     private DefaultTableModel modeloTabla;
-    private LibroController controller = new LibroController();
+    private ControladorLibro controller = new ControladorLibro();
     private JTextField txtTitulo, txtAutor, txtIsbn, txtEditorial, txtStock, txtCat;
 
     public VistaLibro() {

@@ -4,7 +4,7 @@ import com.Biblioteca.dao.EstudianteDAO;
 import com.Biblioteca.model.Estudiante;
 import java.util.List;
 
-public class EstudianteController {
+public class ControladorEstudiante {
     private EstudianteDAO dao = new EstudianteDAO();
 
     public List<Estudiante> obtenerEstudiantes() {

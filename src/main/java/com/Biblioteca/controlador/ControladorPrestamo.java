@@ -3,7 +3,7 @@ package com.Biblioteca.controlador;
 import com.Biblioteca.hilos.PrestamoSincro;
 import java.sql.Date;
 
-public class PrestamoController {
+public class ControladorPrestamo {
 
     public void solicitarPrestamo(int idEstudiante, int idLibro, Date fPrestamo, Date fDevolucion, Runnable callbackRecargar) {
         PrestamoSincro tarea = new PrestamoSincro(idEstudiante, idLibro, fPrestamo, fDevolucion, callbackRecargar);

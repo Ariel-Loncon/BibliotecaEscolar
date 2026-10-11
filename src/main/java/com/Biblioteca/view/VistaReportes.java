@@ -1,12 +1,12 @@
 package com.Biblioteca.view;
 
-import com.Biblioteca.controlador.ReporteController;
+import com.Biblioteca.controlador.ControladorReporte;
 import javax.swing.*;
 import java.util.List;
 
 public class VistaReportes extends JFrame {
     private JTextArea txtAreaReporte;
-    private ReporteController controller = new ReporteController();
+    private ControladorReporte controller = new ControladorReporte();
 
     public VistaReportes() {
         setTitle("Reportes del Sistema");

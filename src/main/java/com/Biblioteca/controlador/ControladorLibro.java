@@ -4,7 +4,7 @@ import com.Biblioteca.dao.LibroDAO;
 import com.Biblioteca.model.Libro;
 import java.util.List;
 
-public class LibroController {
+public class ControladorLibro {
     private LibroDAO dao = new LibroDAO();
 
     public List<Libro> obtenerLibros() {

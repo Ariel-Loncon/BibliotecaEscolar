@@ -3,7 +3,7 @@ package com.Biblioteca.controlador;
 import com.Biblioteca.dao.PrestamoDAO;
 import java.util.List;
 
-public class ReporteController {
+public class ControladorReporte {
     private PrestamoDAO dao = new PrestamoDAO();
 
     public List<String> getLibrosMasPrestados() {

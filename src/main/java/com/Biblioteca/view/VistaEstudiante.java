@@ -1,6 +1,6 @@
 package com.Biblioteca.view;
 
-import com.Biblioteca.controlador.EstudianteController;
+import com.Biblioteca.controlador.ControladorEstudiante;
 import com.Biblioteca.model.Estudiante;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -9,7 +9,7 @@ import java.util.List;
 public class VistaEstudiante extends JFrame {
     private JTable tablaEstudiantes;
     private DefaultTableModel modeloTabla;
-    private EstudianteController controller = new EstudianteController();
+    private ControladorEstudiante controller = new ControladorEstudiante();
 
     public VistaEstudiante() {
         setTitle("Gestión de Estudiantes");

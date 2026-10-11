@@ -1,6 +1,6 @@
 package com.Biblioteca.view;
 
-import com.Biblioteca.controlador.PrestamoController;
+import com.Biblioteca.controlador.ControladorPrestamo;
 import javax.swing.*;
 import java.sql.Date;
 import java.time.LocalDate;
@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class VistaPrestamo extends JFrame {
     private JTextField txtIdEstudiante, txtIdLibro;
     private JButton btnPrestar;
-    private PrestamoController controller = new PrestamoController();
+    private ControladorPrestamo controller = new ControladorPrestamo();
 
     public VistaPrestamo() {
         setTitle("Registrar Préstamo (Concurrente)");

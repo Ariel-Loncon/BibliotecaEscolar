@@ -1,6 +1,6 @@
 package com.Biblioteca.view;
 
-import com.Biblioteca.controlador.LoginController; // Importar el controlador
+import com.Biblioteca.controlador.ControladorLogin; // Importar el controlador
 import com.Biblioteca.model.Usuario;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -9,7 +9,7 @@ public class VistaLogin extends JFrame {
     private JTextField txtCorreo;
     private JPasswordField txtContrasena;
     private JButton btnIngresar;
-    private LoginController loginController = new LoginController(); // Instanciar el controlador
+    private ControladorLogin controladorLogin = new ControladorLogin(); // Instanciar el controlador
 
     public VistaLogin() {
         setTitle("Biblioteca Escolar - Iniciar Sesión");
@@ -43,7 +43,7 @@ public class VistaLogin extends JFrame {
             String pass = new String(txtContrasena.getPassword());
 
             // Usando el Controlador en lugar del DAO (Cumple con MVC)
-            Usuario u = loginController.autenticar(correo, pass);
+            Usuario u = controladorLogin.autenticar(correo, pass);
 
             if (u != null) {
                 JOptionPane.showMessageDialog(this, "Bienvenido " + u.getNombre() + " (" + u.getRol() + ")");
